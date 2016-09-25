@@ -24,7 +24,7 @@ class MQTTClass:
         print(string)
 
     def run(self):
-        self._mqttc.username_pw_set('cartech', 'bAyDzaSW6')
-        self._mqttc.connect("hrvoje.kraken.hr", 1883, 60)
+        self._mqttc.username_pw_set('cartech', '********')
+        self._mqttc.connect("hh.host", 1883, 60)
         self._mqttc.loop_start()
         return self._mqttc
